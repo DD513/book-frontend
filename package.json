@@ -1,0 +1,55 @@
+{
+  "name": "react-umi2-antd-template",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Carie <carie8655@gmail.com>",
+  "scripts": {
+    "start": "cross-env umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "lint": "eslint {src,mock,tests}/**/*.{js,jsx} --fix",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.3",
+    "@umijs/plugin-antd": "^0.8.0",
+    "antd": "^4.6.4",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^2.0.0",
+    "dva": "^2.6.0-beta.6",
+    "dva-logger": "^1.0.0",
+    "enquire-js": "^0.2.1",
+    "lodash": "^4.17.20",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-highlight-words": "^0.16.0",
+    "serve": "^12.0.0",
+    "sw-precache": "^5.2.1",
+    "umijs-plugin-pwa": "0.0.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "react-test-renderer": "^16.7.0",
+    "umi": "^2.7.7",
+    "umi-plugin-react": "^1.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": "14.16.0",
+    "npm": "6.14.11"
+  }
+}
